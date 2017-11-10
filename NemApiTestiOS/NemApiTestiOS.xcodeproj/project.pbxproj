@@ -14,6 +14,18 @@
 		5FD7474A1FB64A55007169B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD747481FB64A54007169B2 /* LaunchScreen.storyboard */; };
 		5FD747551FB64A55007169B2 /* NemApiTestiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747541FB64A55007169B2 /* NemApiTestiOSTests.swift */; };
 		5FD747601FB64A55007169B2 /* NemApiTestiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7475F1FB64A55007169B2 /* NemApiTestiOSUITests.swift */; };
+		5FD747E01FB6535E007169B2 /* seed.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747CB1FB6535D007169B2 /* seed.c */; };
+		5FD747E11FB6535E007169B2 /* fe.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747CC1FB6535D007169B2 /* fe.c */; };
+		5FD747E21FB6535E007169B2 /* verify.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747CD1FB6535D007169B2 /* verify.c */; };
+		5FD747E31FB6535E007169B2 /* ge.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747CE1FB6535D007169B2 /* ge.c */; };
+		5FD747E41FB6535E007169B2 /* sc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747CF1FB6535D007169B2 /* sc.c */; };
+		5FD747E51FB6535E007169B2 /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747D01FB6535D007169B2 /* sign.c */; };
+		5FD747E61FB6535E007169B2 /* key_exchange.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747D21FB6535D007169B2 /* key_exchange.c */; };
+		5FD747E71FB6535E007169B2 /* add_scalar.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747D31FB6535D007169B2 /* add_scalar.c */; };
+		5FD747E81FB6535E007169B2 /* keypair.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747D61FB6535D007169B2 /* keypair.c */; };
+		5FD747E91FB6535E007169B2 /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747D81FB6535D007169B2 /* sha512.c */; };
+		5FD748D11FB65B57007169B2 /* byte_order.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7481D1FB65B57007169B2 /* byte_order.c */; };
+		5FD748E81FB65B57007169B2 /* sha3.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7484C1FB65B57007169B2 /* sha3.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,28 @@
 		5FD7475B1FB64A55007169B2 /* NemApiTestiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NemApiTestiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD7475F1FB64A55007169B2 /* NemApiTestiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NemApiTestiOSUITests.swift; sourceTree = "<group>"; };
 		5FD747611FB64A55007169B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FD747CA1FB6535D007169B2 /* precomp_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = precomp_data.h; sourceTree = "<group>"; };
+		5FD747CB1FB6535D007169B2 /* seed.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = seed.c; sourceTree = "<group>"; };
+		5FD747CC1FB6535D007169B2 /* fe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe.c; sourceTree = "<group>"; };
+		5FD747CD1FB6535D007169B2 /* verify.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = verify.c; sourceTree = "<group>"; };
+		5FD747CE1FB6535D007169B2 /* ge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge.c; sourceTree = "<group>"; };
+		5FD747CF1FB6535D007169B2 /* sc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sc.c; sourceTree = "<group>"; };
+		5FD747D01FB6535D007169B2 /* sign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sign.c; sourceTree = "<group>"; };
+		5FD747D11FB6535D007169B2 /* sha512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha512.h; sourceTree = "<group>"; };
+		5FD747D21FB6535D007169B2 /* key_exchange.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key_exchange.c; sourceTree = "<group>"; };
+		5FD747D31FB6535D007169B2 /* add_scalar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = add_scalar.c; sourceTree = "<group>"; };
+		5FD747D41FB6535D007169B2 /* ed25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ed25519.h; sourceTree = "<group>"; };
+		5FD747D51FB6535D007169B2 /* fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fe.h; sourceTree = "<group>"; };
+		5FD747D61FB6535D007169B2 /* keypair.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keypair.c; sourceTree = "<group>"; };
+		5FD747D71FB6535D007169B2 /* fixedint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fixedint.h; sourceTree = "<group>"; };
+		5FD747D81FB6535D007169B2 /* sha512.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha512.c; sourceTree = "<group>"; };
+		5FD747D91FB6535D007169B2 /* sc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sc.h; sourceTree = "<group>"; };
+		5FD747DA1FB6535D007169B2 /* ge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ge.h; sourceTree = "<group>"; };
+		5FD747EA1FB65429007169B2 /* NemApiTestiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NemApiTestiOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		5FD7481D1FB65B57007169B2 /* byte_order.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = byte_order.c; sourceTree = "<group>"; };
+		5FD7482B1FB65B57007169B2 /* sha3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha3.h; sourceTree = "<group>"; };
+		5FD748401FB65B57007169B2 /* byte_order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = byte_order.h; sourceTree = "<group>"; };
+		5FD7484C1FB65B57007169B2 /* sha3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha3.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +131,15 @@
 		5FD7473E1FB64A54007169B2 /* NemApiTestiOS */ = {
 			isa = PBXGroup;
 			children = (
+				5FD747F01FB65B57007169B2 /* RHash */,
+				5FD747EA1FB65429007169B2 /* NemApiTestiOS-Bridging-Header.h */,
+				5FD7474B1FB64A55007169B2 /* Info.plist */,
 				5FD7473F1FB64A54007169B2 /* AppDelegate.swift */,
 				5FD747411FB64A54007169B2 /* ViewController.swift */,
-				5FD747431FB64A54007169B2 /* Main.storyboard */,
 				5FD747461FB64A54007169B2 /* Assets.xcassets */,
+				5FD747C31FB6535D007169B2 /* ed25519 */,
 				5FD747481FB64A54007169B2 /* LaunchScreen.storyboard */,
-				5FD7474B1FB64A55007169B2 /* Info.plist */,
+				5FD747431FB64A54007169B2 /* Main.storyboard */,
 			);
 			path = NemApiTestiOS;
 			sourceTree = "<group>";
@@ -123,6 +160,57 @@
 				5FD747611FB64A55007169B2 /* Info.plist */,
 			);
 			path = NemApiTestiOSUITests;
+			sourceTree = "<group>";
+		};
+		5FD747C31FB6535D007169B2 /* ed25519 */ = {
+			isa = PBXGroup;
+			children = (
+				5FD747C91FB6535D007169B2 /* src */,
+			);
+			path = ed25519;
+			sourceTree = "<group>";
+		};
+		5FD747C91FB6535D007169B2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5FD747CA1FB6535D007169B2 /* precomp_data.h */,
+				5FD747CB1FB6535D007169B2 /* seed.c */,
+				5FD747CC1FB6535D007169B2 /* fe.c */,
+				5FD747CD1FB6535D007169B2 /* verify.c */,
+				5FD747CE1FB6535D007169B2 /* ge.c */,
+				5FD747CF1FB6535D007169B2 /* sc.c */,
+				5FD747D01FB6535D007169B2 /* sign.c */,
+				5FD747D11FB6535D007169B2 /* sha512.h */,
+				5FD747D21FB6535D007169B2 /* key_exchange.c */,
+				5FD747D31FB6535D007169B2 /* add_scalar.c */,
+				5FD747D41FB6535D007169B2 /* ed25519.h */,
+				5FD747D51FB6535D007169B2 /* fe.h */,
+				5FD747D61FB6535D007169B2 /* keypair.c */,
+				5FD747D71FB6535D007169B2 /* fixedint.h */,
+				5FD747D81FB6535D007169B2 /* sha512.c */,
+				5FD747D91FB6535D007169B2 /* sc.h */,
+				5FD747DA1FB6535D007169B2 /* ge.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5FD747F01FB65B57007169B2 /* RHash */ = {
+			isa = PBXGroup;
+			children = (
+				5FD7481C1FB65B57007169B2 /* librhash */,
+			);
+			path = RHash;
+			sourceTree = "<group>";
+		};
+		5FD7481C1FB65B57007169B2 /* librhash */ = {
+			isa = PBXGroup;
+			children = (
+				5FD7481D1FB65B57007169B2 /* byte_order.c */,
+				5FD748401FB65B57007169B2 /* byte_order.h */,
+				5FD7484C1FB65B57007169B2 /* sha3.c */,
+				5FD7482B1FB65B57007169B2 /* sha3.h */,
+			);
+			path = librhash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +347,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD747E61FB6535E007169B2 /* key_exchange.c in Sources */,
+				5FD747E01FB6535E007169B2 /* seed.c in Sources */,
+				5FD747E11FB6535E007169B2 /* fe.c in Sources */,
+				5FD747E41FB6535E007169B2 /* sc.c in Sources */,
 				5FD747421FB64A54007169B2 /* ViewController.swift in Sources */,
+				5FD747E31FB6535E007169B2 /* ge.c in Sources */,
+				5FD748D11FB65B57007169B2 /* byte_order.c in Sources */,
+				5FD747E81FB6535E007169B2 /* keypair.c in Sources */,
+				5FD747E21FB6535E007169B2 /* verify.c in Sources */,
+				5FD747E51FB6535E007169B2 /* sign.c in Sources */,
+				5FD747E91FB6535E007169B2 /* sha512.c in Sources */,
 				5FD747401FB64A54007169B2 /* AppDelegate.swift in Sources */,
+				5FD748E81FB65B57007169B2 /* sha3.c in Sources */,
+				5FD747E71FB6535E007169B2 /* add_scalar.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +532,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryuta46.NemApiTestiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NemApiTestiOS/NemApiTestiOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,6 +548,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryuta46.NemApiTestiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NemApiTestiOS/NemApiTestiOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

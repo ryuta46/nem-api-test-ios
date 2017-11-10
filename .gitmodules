@@ -1,3 +1,6 @@
 [submodule "NemApiTestiOS/NemApiTestiOS/ed25519"]
 	path = NemApiTestiOS/NemApiTestiOS/ed25519
 	url = https://github.com/orlp/ed25519.git
+[submodule "NemApiTestiOS/NemApiTestiOS/RHash"]
+	path = NemApiTestiOS/NemApiTestiOS/RHash
+	url = https://github.com/rhash/RHash.git
