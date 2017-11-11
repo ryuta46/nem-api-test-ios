@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,73 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NemApiTestiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1l1-NQ-U4W">
+                                <rect key="frame" x="8" y="28" width="359" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZT-3o-w6K">
+                                <rect key="frame" x="8" y="56.5" width="359" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VA4-LO-tDF">
+                                <rect key="frame" x="8" y="629" width="175.5" height="30"/>
+                                <state key="normal" title="Account Info"/>
+                                <connections>
+                                    <action selector="onTouchedAccountInfoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oiP-Gl-h1Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iQ-4e-0za">
+                                <rect key="frame" x="191.5" y="629" width="175.5" height="30"/>
+                                <state key="normal" title="Send XEM"/>
+                                <connections>
+                                    <action selector="onTouchedSendXemButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FXR-kY-1Da"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cr1-Jp-Di5">
+                                <rect key="frame" x="8" y="85.5" width="359" height="535.5"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cr1-Jp-Di5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="9FW-Ab-DzJ"/>
+                            <constraint firstItem="2iQ-4e-0za" firstAttribute="width" secondItem="VA4-LO-tDF" secondAttribute="width" id="DIB-aK-nOU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VA4-LO-tDF" secondAttribute="bottom" constant="8" id="FtA-Zs-sm9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cr1-Jp-Di5" secondAttribute="trailing" constant="8" id="Htr-pt-fWl"/>
+                            <constraint firstItem="fZT-3o-w6K" firstAttribute="top" secondItem="1l1-NQ-U4W" secondAttribute="bottom" constant="8" id="RNb-lF-oJa"/>
+                            <constraint firstItem="VA4-LO-tDF" firstAttribute="top" secondItem="cr1-Jp-Di5" secondAttribute="bottom" constant="8" id="WEO-oM-xFF"/>
+                            <constraint firstItem="fZT-3o-w6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="etc-aV-dWd"/>
+                            <constraint firstItem="VA4-LO-tDF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="ew0-D6-CL5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2iQ-4e-0za" secondAttribute="trailing" constant="8" id="k7g-qZ-Qaa"/>
+                            <constraint firstItem="1l1-NQ-U4W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="lgi-SR-GpJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fZT-3o-w6K" secondAttribute="trailing" constant="8" id="oqs-ao-dSz"/>
+                            <constraint firstItem="1l1-NQ-U4W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="pKe-zd-ynU"/>
+                            <constraint firstItem="2iQ-4e-0za" firstAttribute="leading" secondItem="VA4-LO-tDF" secondAttribute="trailing" constant="8" id="s2q-Yr-qB6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2iQ-4e-0za" secondAttribute="bottom" constant="8" id="shS-Co-pl2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1l1-NQ-U4W" secondAttribute="trailing" constant="8" id="vBs-1B-Le4"/>
+                            <constraint firstItem="cr1-Jp-Di5" firstAttribute="top" secondItem="fZT-3o-w6K" secondAttribute="bottom" constant="8" id="zQo-GJ-YyJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textAddress" destination="fZT-3o-w6K" id="hST-52-mfZ"/>
+                        <outlet property="textMessage" destination="cr1-Jp-Di5" id="JM5-hh-VUW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>

@@ -14,27 +14,45 @@ class ViewController: UIViewController {
 
     private lazy var keyPair: KeyPair = CryptoUtil.loadKeys()
 
+    private var address = ""
+
+    @IBOutlet weak var textAddress: UILabel!
+    @IBOutlet weak var textMessage: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         fetchAccountInfo()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     private func fetchAccountInfo() {
         _ = client.getAccountFromPublicKey(ConvertUtil.toHexString(keyPair.publicKey))
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { (accountMetaDataPair) in
+            .subscribe(onNext: { [weak self](accountMetaDataPair) in
+                guard let weakSelf = self else {
+                    return
+                }
                 print("address = \(accountMetaDataPair.account.address)")
                 print("balance = \(accountMetaDataPair.account.balance)")
+                weakSelf.address = accountMetaDataPair.account.address
+                weakSelf.textAddress.text = weakSelf.address
+                weakSelf.textMessage.text = "balance = \(accountMetaDataPair.account.balance)"
             }, onError: { (error) in
+                print("Error occured: \(error.localizedDescription)")
             }, onCompleted: {
             }, onDisposed: {}
         )
     }
+
+    @IBAction func onTouchedAccountInfoButton(_ sender: Any) {
+        textMessage.text = ""
+        fetchAccountInfo()
+    }
+
+    @IBAction func onTouchedSendXemButton(_ sender: Any) {
+    }
+
 }
 
