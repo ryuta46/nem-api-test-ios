@@ -13,7 +13,7 @@ class ConvertUtil {
     static func toHexString(_ bytes : [UInt8]) -> String {
         var result = ""
         bytes.forEach { (element) in
-            result = result + String(element, radix: 16)
+            result = result + String(format:"%02x", element)
         }
         return result
     }

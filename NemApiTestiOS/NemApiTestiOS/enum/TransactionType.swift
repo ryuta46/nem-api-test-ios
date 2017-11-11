@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum  TransactionType: Int {
+enum  TransactionType: UInt32 {
     // 転送トランザクション
     case Transfer = 0x0101
     // 重要度転送トランザクション)
@@ -27,7 +27,7 @@ enum  TransactionType: Int {
     case MosaicSupplyChange = 0x4002
 
 
-    var versionOffset: Int {
+    var versionOffset: UInt32 {
         get {
             switch self {
             case .Transfer, .MultisigAggregateModificationTransfer:

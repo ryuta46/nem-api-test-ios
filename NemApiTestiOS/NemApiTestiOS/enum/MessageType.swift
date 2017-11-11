@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum MessageType: Int {
+enum MessageType: UInt32 {
     case Plain = 1 // 平文
     case Encrypted = 2 // 暗号文
 }

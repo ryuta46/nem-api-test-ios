@@ -16,7 +16,7 @@ struct NemAnnounceResult : Codable{
     let innerTransactionHash: TransactionData?
 
     struct TransactionData : Codable {
-        let data: String
+        var data: String? = nil
     }
 
 }

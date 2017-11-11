@@ -43,6 +43,7 @@
 		5FD7494B1FB6D4D9007169B2 /* SignedTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7494A1FB6D4D9007169B2 /* SignedTransaction.swift */; };
 		5FD7494D1FB6D4EA007169B2 /* TransferTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7494C1FB6D4EA007169B2 /* TransferTransaction.swift */; };
 		5FD7494F1FB6D782007169B2 /* NemApiWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7494E1FB6D782007169B2 /* NemApiWrapper.swift */; };
+		5FD749511FB792C8007169B2 /* TimeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749501FB792C8007169B2 /* TimeUtil.swift */; };
 		DACA4CC6E0903800CA1F58F2 /* Pods_NemApiTestiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725A785120D18D15157916F /* Pods_NemApiTestiOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		5FD7494A1FB6D4D9007169B2 /* SignedTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedTransaction.swift; sourceTree = "<group>"; };
 		5FD7494C1FB6D4EA007169B2 /* TransferTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTransaction.swift; sourceTree = "<group>"; };
 		5FD7494E1FB6D782007169B2 /* NemApiWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NemApiWrapper.swift; sourceTree = "<group>"; };
+		5FD749501FB792C8007169B2 /* TimeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtil.swift; sourceTree = "<group>"; };
 		73F95F96CFE10B889E4B4AEC /* Pods-NemApiTestiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemApiTestiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NemApiTestiOSTests/Pods-NemApiTestiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		8060C5F381D4D91F34DD3271 /* Pods-NemApiTestiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemApiTestiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NemApiTestiOSTests/Pods-NemApiTestiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8EB9D9C60AF1DF9A52B5A14A /* Pods_NemApiTestiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NemApiTestiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,21 +194,21 @@
 		5FD7473E1FB64A54007169B2 /* NemApiTestiOS */ = {
 			isa = PBXGroup;
 			children = (
-				5FD749391FB6CCDD007169B2 /* enum */,
-				5FD749361FB6BDD1007169B2 /* entity */,
-				5FD749311FB681D2007169B2 /* util */,
-				5FD747F01FB65B57007169B2 /* RHash */,
+				5FD7492F1FB664FD007169B2 /* ed25519_sha3_512.c */,
+				5FD7492E1FB664FD007169B2 /* ed25519_sha3_512.h */,
 				5FD747EA1FB65429007169B2 /* NemApiTestiOS-Bridging-Header.h */,
 				5FD7474B1FB64A55007169B2 /* Info.plist */,
 				5FD7473F1FB64A54007169B2 /* AppDelegate.swift */,
+				5FD7494E1FB6D782007169B2 /* NemApiWrapper.swift */,
 				5FD747411FB64A54007169B2 /* ViewController.swift */,
 				5FD747461FB64A54007169B2 /* Assets.xcassets */,
 				5FD747C31FB6535D007169B2 /* ed25519 */,
+				5FD749361FB6BDD1007169B2 /* entity */,
+				5FD749391FB6CCDD007169B2 /* enum */,
 				5FD747481FB64A54007169B2 /* LaunchScreen.storyboard */,
 				5FD747431FB64A54007169B2 /* Main.storyboard */,
-				5FD7492E1FB664FD007169B2 /* ed25519_sha3_512.h */,
-				5FD7492F1FB664FD007169B2 /* ed25519_sha3_512.c */,
-				5FD7494E1FB6D782007169B2 /* NemApiWrapper.swift */,
+				5FD747F01FB65B57007169B2 /* RHash */,
+				5FD749311FB681D2007169B2 /* util */,
 			);
 			path = NemApiTestiOS;
 			sourceTree = "<group>";
@@ -285,6 +287,7 @@
 			children = (
 				5FD749321FB681FF007169B2 /* ConvertUtil.swift */,
 				5FD749341FB6BCBE007169B2 /* CryptoUtil.swift */,
+				5FD749501FB792C8007169B2 /* TimeUtil.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -292,10 +295,10 @@
 		5FD749361FB6BDD1007169B2 /* entity */ = {
 			isa = PBXGroup;
 			children = (
-				5FD749371FB6BDE0007169B2 /* KeyPair.swift */,
 				5FD749401FB6D3D1007169B2 /* AccountInfo.swift */,
 				5FD749421FB6D47C007169B2 /* AccountMetaData.swift */,
 				5FD749441FB6D489007169B2 /* AccountMetaDataPair.swift */,
+				5FD749371FB6BDE0007169B2 /* KeyPair.swift */,
 				5FD749461FB6D4A2007169B2 /* NemAnnounceResult.swift */,
 				5FD749481FB6D4C6007169B2 /* RequestAnnounce.swift */,
 				5FD7494A1FB6D4D9007169B2 /* SignedTransaction.swift */,
@@ -613,6 +616,7 @@
 				5FD7493F1FB6D155007169B2 /* Version.swift in Sources */,
 				5FD747421FB64A54007169B2 /* ViewController.swift in Sources */,
 				5FD7493B1FB6D12F007169B2 /* MessageType.swift in Sources */,
+				5FD749511FB792C8007169B2 /* TimeUtil.swift in Sources */,
 				5FD749411FB6D3D1007169B2 /* AccountInfo.swift in Sources */,
 				5FD747E31FB6535E007169B2 /* ge.c in Sources */,
 				5FD748D11FB65B57007169B2 /* byte_order.c in Sources */,

@@ -8,34 +8,32 @@
 
 import Foundation
 
-struct SignedTransaction {
+class SignedTransaction {
     let type: TransactionType
-    let version: Version
     let publicKey: [UInt8]
-    let fee: UInt64 // マイクロNEM単位の手数料
 
-    /*
-    var commonTransactionBytes: [UInt8] {
-        get {
-            // タイムスタンプ計算
-            val timestamp = TimeUtil.currentTimeFromOrigin()
-            // deadline はそこから 1 時間後にする
-            val deadline = timestamp + 60 * 60
+    var version: Version = .Main
+    var fee: UInt64 = 0// マイクロNEM単位の手数料
 
-            val transactionFee = Math.max(calculateMinimumTransactionFee(), fee)
-            return toByteArrayWithLittleEndian(type.rawValue) +
-                toByteArrayWithLittleEndian(version.rawValue + type.versionOffset) +
-                toByteArrayWithLittleEndian(timestamp) +
-                toByteArrayWithLittleEndian(publicKey.size) +
-                publicKey +
-                toByteArrayWithLittleEndian(transactionFee) +
-                toByteArrayWithLittleEndian(deadline)
+    init(type: TransactionType, publicKey: [UInt8]) {
+        self.type = type
+        self.publicKey = publicKey
     }
 
-    /**
-     * 最小の転送トランザクション手数料を計算する
-     */
-    abstract fun calculateMinimumTransactionFee() : Long
- */
+    func getCommonTransactionBytes(minimumFee: UInt64) -> [UInt8] {
+        // タイムスタンプ計算
+        let timestamp = TimeUtil.currentTimeFromOrigin()
+        // deadline はそこから 1 時間後にする
+        let deadline = timestamp + 60 * 60
 
+        let transactionFee = max(minimumFee, fee)
+
+        return ConvertUtil.toByteArrayWithLittleEndian(type.rawValue) +
+            ConvertUtil.toByteArrayWithLittleEndian(version.rawValue + type.versionOffset) +
+            ConvertUtil.toByteArrayWithLittleEndian(timestamp) +
+            ConvertUtil.toByteArrayWithLittleEndian(UInt32(publicKey.count)) +
+            publicKey +
+            ConvertUtil.toByteArrayWithLittleEndian(transactionFee) +
+            ConvertUtil.toByteArrayWithLittleEndian(deadline)
+    }
 }
