@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B6DCCF6360EE8414D20BF81 /* Pods_NemApiTestiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC52BDC542B8BBA0BB280C53 /* Pods_NemApiTestiOSUITests.framework */; };
+		46D773B013DA7F3421B7F04D /* Pods_NemApiTestiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB9D9C60AF1DF9A52B5A14A /* Pods_NemApiTestiOS.framework */; };
 		5FD747401FB64A54007169B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7473F1FB64A54007169B2 /* AppDelegate.swift */; };
 		5FD747421FB64A54007169B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747411FB64A54007169B2 /* ViewController.swift */; };
 		5FD747451FB64A54007169B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD747431FB64A54007169B2 /* Main.storyboard */; };
@@ -30,6 +32,18 @@
 		5FD749331FB681FF007169B2 /* ConvertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749321FB681FF007169B2 /* ConvertUtil.swift */; };
 		5FD749351FB6BCBE007169B2 /* CryptoUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749341FB6BCBE007169B2 /* CryptoUtil.swift */; };
 		5FD749381FB6BDE0007169B2 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749371FB6BDE0007169B2 /* KeyPair.swift */; };
+		5FD7493B1FB6D12F007169B2 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7493A1FB6D12F007169B2 /* MessageType.swift */; };
+		5FD7493D1FB6D143007169B2 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7493C1FB6D143007169B2 /* TransactionType.swift */; };
+		5FD7493F1FB6D155007169B2 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7493E1FB6D155007169B2 /* Version.swift */; };
+		5FD749411FB6D3D1007169B2 /* AccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749401FB6D3D1007169B2 /* AccountInfo.swift */; };
+		5FD749431FB6D47C007169B2 /* AccountMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749421FB6D47C007169B2 /* AccountMetaData.swift */; };
+		5FD749451FB6D489007169B2 /* AccountMetaDataPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749441FB6D489007169B2 /* AccountMetaDataPair.swift */; };
+		5FD749471FB6D4A2007169B2 /* NemAnnounceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749461FB6D4A2007169B2 /* NemAnnounceResult.swift */; };
+		5FD749491FB6D4C6007169B2 /* RequestAnnounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749481FB6D4C6007169B2 /* RequestAnnounce.swift */; };
+		5FD7494B1FB6D4D9007169B2 /* SignedTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7494A1FB6D4D9007169B2 /* SignedTransaction.swift */; };
+		5FD7494D1FB6D4EA007169B2 /* TransferTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7494C1FB6D4EA007169B2 /* TransferTransaction.swift */; };
+		5FD7494F1FB6D782007169B2 /* NemApiWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7494E1FB6D782007169B2 /* NemApiWrapper.swift */; };
+		DACA4CC6E0903800CA1F58F2 /* Pods_NemApiTestiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725A785120D18D15157916F /* Pods_NemApiTestiOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +104,26 @@
 		5FD749321FB681FF007169B2 /* ConvertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertUtil.swift; sourceTree = "<group>"; };
 		5FD749341FB6BCBE007169B2 /* CryptoUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUtil.swift; sourceTree = "<group>"; };
 		5FD749371FB6BDE0007169B2 /* KeyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		5FD7493A1FB6D12F007169B2 /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
+		5FD7493C1FB6D143007169B2 /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
+		5FD7493E1FB6D155007169B2 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		5FD749401FB6D3D1007169B2 /* AccountInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfo.swift; sourceTree = "<group>"; };
+		5FD749421FB6D47C007169B2 /* AccountMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMetaData.swift; sourceTree = "<group>"; };
+		5FD749441FB6D489007169B2 /* AccountMetaDataPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountMetaDataPair.swift; sourceTree = "<group>"; };
+		5FD749461FB6D4A2007169B2 /* NemAnnounceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NemAnnounceResult.swift; sourceTree = "<group>"; };
+		5FD749481FB6D4C6007169B2 /* RequestAnnounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAnnounce.swift; sourceTree = "<group>"; };
+		5FD7494A1FB6D4D9007169B2 /* SignedTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedTransaction.swift; sourceTree = "<group>"; };
+		5FD7494C1FB6D4EA007169B2 /* TransferTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTransaction.swift; sourceTree = "<group>"; };
+		5FD7494E1FB6D782007169B2 /* NemApiWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NemApiWrapper.swift; sourceTree = "<group>"; };
+		73F95F96CFE10B889E4B4AEC /* Pods-NemApiTestiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemApiTestiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NemApiTestiOSTests/Pods-NemApiTestiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		8060C5F381D4D91F34DD3271 /* Pods-NemApiTestiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemApiTestiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NemApiTestiOSTests/Pods-NemApiTestiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB9D9C60AF1DF9A52B5A14A /* Pods_NemApiTestiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NemApiTestiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38DDFF59F2078F2A3B019AF /* Pods-NemApiTestiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemApiTestiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NemApiTestiOS/Pods-NemApiTestiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B725A785120D18D15157916F /* Pods_NemApiTestiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NemApiTestiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC52BDC542B8BBA0BB280C53 /* Pods_NemApiTestiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NemApiTestiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C616177F7E620BC84BF63253 /* Pods-NemApiTestiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemApiTestiOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NemApiTestiOSUITests/Pods-NemApiTestiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB9C6E3E726A2669EDE90226 /* Pods-NemApiTestiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemApiTestiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NemApiTestiOS/Pods-NemApiTestiOS.release.xcconfig"; sourceTree = "<group>"; };
+		E0A76152970C9F29BDBE8431 /* Pods-NemApiTestiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NemApiTestiOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NemApiTestiOSUITests/Pods-NemApiTestiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D773B013DA7F3421B7F04D /* Pods_NemApiTestiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DACA4CC6E0903800CA1F58F2 /* Pods_NemApiTestiOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,12 +147,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6DCCF6360EE8414D20BF81 /* Pods_NemApiTestiOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D34C8152B00D7542E11E26B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B38DDFF59F2078F2A3B019AF /* Pods-NemApiTestiOS.debug.xcconfig */,
+				DB9C6E3E726A2669EDE90226 /* Pods-NemApiTestiOS.release.xcconfig */,
+				8060C5F381D4D91F34DD3271 /* Pods-NemApiTestiOSTests.debug.xcconfig */,
+				73F95F96CFE10B889E4B4AEC /* Pods-NemApiTestiOSTests.release.xcconfig */,
+				E0A76152970C9F29BDBE8431 /* Pods-NemApiTestiOSUITests.debug.xcconfig */,
+				C616177F7E620BC84BF63253 /* Pods-NemApiTestiOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5FD747331FB64A54007169B2 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +174,8 @@
 				5FD747531FB64A55007169B2 /* NemApiTestiOSTests */,
 				5FD7475E1FB64A55007169B2 /* NemApiTestiOSUITests */,
 				5FD7473D1FB64A54007169B2 /* Products */,
+				0D34C8152B00D7542E11E26B /* Pods */,
+				B307605CD9EEA80B2303FDEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +192,7 @@
 		5FD7473E1FB64A54007169B2 /* NemApiTestiOS */ = {
 			isa = PBXGroup;
 			children = (
+				5FD749391FB6CCDD007169B2 /* enum */,
 				5FD749361FB6BDD1007169B2 /* entity */,
 				5FD749311FB681D2007169B2 /* util */,
 				5FD747F01FB65B57007169B2 /* RHash */,
@@ -153,6 +206,7 @@
 				5FD747431FB64A54007169B2 /* Main.storyboard */,
 				5FD7492E1FB664FD007169B2 /* ed25519_sha3_512.h */,
 				5FD7492F1FB664FD007169B2 /* ed25519_sha3_512.c */,
+				5FD7494E1FB6D782007169B2 /* NemApiWrapper.swift */,
 			);
 			path = NemApiTestiOS;
 			sourceTree = "<group>";
@@ -239,8 +293,35 @@
 			isa = PBXGroup;
 			children = (
 				5FD749371FB6BDE0007169B2 /* KeyPair.swift */,
+				5FD749401FB6D3D1007169B2 /* AccountInfo.swift */,
+				5FD749421FB6D47C007169B2 /* AccountMetaData.swift */,
+				5FD749441FB6D489007169B2 /* AccountMetaDataPair.swift */,
+				5FD749461FB6D4A2007169B2 /* NemAnnounceResult.swift */,
+				5FD749481FB6D4C6007169B2 /* RequestAnnounce.swift */,
+				5FD7494A1FB6D4D9007169B2 /* SignedTransaction.swift */,
+				5FD7494C1FB6D4EA007169B2 /* TransferTransaction.swift */,
 			);
 			path = entity;
+			sourceTree = "<group>";
+		};
+		5FD749391FB6CCDD007169B2 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				5FD7493A1FB6D12F007169B2 /* MessageType.swift */,
+				5FD7493C1FB6D143007169B2 /* TransactionType.swift */,
+				5FD7493E1FB6D155007169B2 /* Version.swift */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
+		B307605CD9EEA80B2303FDEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EB9D9C60AF1DF9A52B5A14A /* Pods_NemApiTestiOS.framework */,
+				B725A785120D18D15157916F /* Pods_NemApiTestiOSTests.framework */,
+				BC52BDC542B8BBA0BB280C53 /* Pods_NemApiTestiOSUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +331,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FD747641FB64A55007169B2 /* Build configuration list for PBXNativeTarget "NemApiTestiOS" */;
 			buildPhases = (
+				68C33EA27B1CC3C6EE40EF75 /* [CP] Check Pods Manifest.lock */,
 				5FD747381FB64A54007169B2 /* Sources */,
 				5FD747391FB64A54007169B2 /* Frameworks */,
 				5FD7473A1FB64A54007169B2 /* Resources */,
+				9B1A47928411A31EB0E9DF9F /* [CP] Embed Pods Frameworks */,
+				69E87309B2040B72ED549578 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,9 +351,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FD747671FB64A55007169B2 /* Build configuration list for PBXNativeTarget "NemApiTestiOSTests" */;
 			buildPhases = (
+				70FC05FE2BD46EBB2C8A1509 /* [CP] Check Pods Manifest.lock */,
 				5FD7474C1FB64A55007169B2 /* Sources */,
 				5FD7474D1FB64A55007169B2 /* Frameworks */,
 				5FD7474E1FB64A55007169B2 /* Resources */,
+				F5EF77E8D46CA6C2AFA9A6A6 /* [CP] Embed Pods Frameworks */,
+				C79C7B8460E53CC4BD9596D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,9 +372,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FD7476A1FB64A55007169B2 /* Build configuration list for PBXNativeTarget "NemApiTestiOSUITests" */;
 			buildPhases = (
+				9F4A41DC307070D42090A92E /* [CP] Check Pods Manifest.lock */,
 				5FD747571FB64A55007169B2 /* Sources */,
 				5FD747581FB64A55007169B2 /* Frameworks */,
 				5FD747591FB64A55007169B2 /* Resources */,
+				A4E0EA6F61915CF0B610084D /* [CP] Embed Pods Frameworks */,
+				82D8857D5F7AF9C6F5001F98 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -372,26 +462,175 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68C33EA27B1CC3C6EE40EF75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69E87309B2040B72ED549578 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NemApiTestiOS/Pods-NemApiTestiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70FC05FE2BD46EBB2C8A1509 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82D8857D5F7AF9C6F5001F98 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NemApiTestiOSUITests/Pods-NemApiTestiOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B1A47928411A31EB0E9DF9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NemApiTestiOS/Pods-NemApiTestiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F4A41DC307070D42090A92E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4E0EA6F61915CF0B610084D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NemApiTestiOSUITests/Pods-NemApiTestiOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79C7B8460E53CC4BD9596D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NemApiTestiOSTests/Pods-NemApiTestiOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5EF77E8D46CA6C2AFA9A6A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NemApiTestiOSTests/Pods-NemApiTestiOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5FD747381FB64A54007169B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD749431FB6D47C007169B2 /* AccountMetaData.swift in Sources */,
 				5FD747E61FB6535E007169B2 /* key_exchange.c in Sources */,
 				5FD747E01FB6535E007169B2 /* seed.c in Sources */,
 				5FD747E11FB6535E007169B2 /* fe.c in Sources */,
 				5FD747E41FB6535E007169B2 /* sc.c in Sources */,
+				5FD7493F1FB6D155007169B2 /* Version.swift in Sources */,
 				5FD747421FB64A54007169B2 /* ViewController.swift in Sources */,
+				5FD7493B1FB6D12F007169B2 /* MessageType.swift in Sources */,
+				5FD749411FB6D3D1007169B2 /* AccountInfo.swift in Sources */,
 				5FD747E31FB6535E007169B2 /* ge.c in Sources */,
 				5FD748D11FB65B57007169B2 /* byte_order.c in Sources */,
+				5FD7494B1FB6D4D9007169B2 /* SignedTransaction.swift in Sources */,
+				5FD749471FB6D4A2007169B2 /* NemAnnounceResult.swift in Sources */,
 				5FD747E81FB6535E007169B2 /* keypair.c in Sources */,
 				5FD747E21FB6535E007169B2 /* verify.c in Sources */,
+				5FD749491FB6D4C6007169B2 /* RequestAnnounce.swift in Sources */,
 				5FD749381FB6BDE0007169B2 /* KeyPair.swift in Sources */,
+				5FD749451FB6D489007169B2 /* AccountMetaDataPair.swift in Sources */,
 				5FD747E51FB6535E007169B2 /* sign.c in Sources */,
+				5FD7494D1FB6D4EA007169B2 /* TransferTransaction.swift in Sources */,
 				5FD749301FB664FD007169B2 /* ed25519_sha3_512.c in Sources */,
 				5FD749331FB681FF007169B2 /* ConvertUtil.swift in Sources */,
+				5FD7494F1FB6D782007169B2 /* NemApiWrapper.swift in Sources */,
 				5FD747E91FB6535E007169B2 /* sha512.c in Sources */,
 				5FD747401FB64A54007169B2 /* AppDelegate.swift in Sources */,
+				5FD7493D1FB6D143007169B2 /* TransactionType.swift in Sources */,
 				5FD748E81FB65B57007169B2 /* sha3.c in Sources */,
 				5FD749351FB6BCBE007169B2 /* CryptoUtil.swift in Sources */,
 				5FD747E71FB6535E007169B2 /* add_scalar.c in Sources */,
@@ -562,6 +801,7 @@
 		};
 		5FD747651FB64A55007169B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38DDFF59F2078F2A3B019AF /* Pods-NemApiTestiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -577,6 +817,7 @@
 		};
 		5FD747661FB64A55007169B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB9C6E3E726A2669EDE90226 /* Pods-NemApiTestiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +833,7 @@
 		};
 		5FD747681FB64A55007169B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8060C5F381D4D91F34DD3271 /* Pods-NemApiTestiOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -609,6 +851,7 @@
 		};
 		5FD747691FB64A55007169B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F95F96CFE10B889E4B4AEC /* Pods-NemApiTestiOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -626,6 +869,7 @@
 		};
 		5FD7476B1FB64A55007169B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0A76152970C9F29BDBE8431 /* Pods-NemApiTestiOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -642,6 +886,7 @@
 		};
 		5FD7476C1FB64A55007169B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C616177F7E620BC84BF63253 /* Pods-NemApiTestiOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
