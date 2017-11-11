@@ -9,8 +9,7 @@
 #ifndef NemApiTestiOS_Bridging_Header_h
 #define NemApiTestiOS_Bridging_Header_h
 
-#import "RHash/librhash/sha3.h"
 #import "ed25519/src/ed25519.h"
-
+#import "ed25519_sha3_512.h"
 
 #endif /* NemApiTestiOS_Bridging_Header_h */

@@ -26,6 +26,10 @@
 		5FD747E91FB6535E007169B2 /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD747D81FB6535D007169B2 /* sha512.c */; };
 		5FD748D11FB65B57007169B2 /* byte_order.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7481D1FB65B57007169B2 /* byte_order.c */; };
 		5FD748E81FB65B57007169B2 /* sha3.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7484C1FB65B57007169B2 /* sha3.c */; };
+		5FD749301FB664FD007169B2 /* ed25519_sha3_512.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD7492F1FB664FD007169B2 /* ed25519_sha3_512.c */; };
+		5FD749331FB681FF007169B2 /* ConvertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749321FB681FF007169B2 /* ConvertUtil.swift */; };
+		5FD749351FB6BCBE007169B2 /* CryptoUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749341FB6BCBE007169B2 /* CryptoUtil.swift */; };
+		5FD749381FB6BDE0007169B2 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD749371FB6BDE0007169B2 /* KeyPair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,11 @@
 		5FD7482B1FB65B57007169B2 /* sha3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha3.h; sourceTree = "<group>"; };
 		5FD748401FB65B57007169B2 /* byte_order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = byte_order.h; sourceTree = "<group>"; };
 		5FD7484C1FB65B57007169B2 /* sha3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha3.c; sourceTree = "<group>"; };
+		5FD7492E1FB664FD007169B2 /* ed25519_sha3_512.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ed25519_sha3_512.h; sourceTree = "<group>"; };
+		5FD7492F1FB664FD007169B2 /* ed25519_sha3_512.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ed25519_sha3_512.c; sourceTree = "<group>"; };
+		5FD749321FB681FF007169B2 /* ConvertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertUtil.swift; sourceTree = "<group>"; };
+		5FD749341FB6BCBE007169B2 /* CryptoUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUtil.swift; sourceTree = "<group>"; };
+		5FD749371FB6BDE0007169B2 /* KeyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +140,8 @@
 		5FD7473E1FB64A54007169B2 /* NemApiTestiOS */ = {
 			isa = PBXGroup;
 			children = (
+				5FD749361FB6BDD1007169B2 /* entity */,
+				5FD749311FB681D2007169B2 /* util */,
 				5FD747F01FB65B57007169B2 /* RHash */,
 				5FD747EA1FB65429007169B2 /* NemApiTestiOS-Bridging-Header.h */,
 				5FD7474B1FB64A55007169B2 /* Info.plist */,
@@ -140,6 +151,8 @@
 				5FD747C31FB6535D007169B2 /* ed25519 */,
 				5FD747481FB64A54007169B2 /* LaunchScreen.storyboard */,
 				5FD747431FB64A54007169B2 /* Main.storyboard */,
+				5FD7492E1FB664FD007169B2 /* ed25519_sha3_512.h */,
+				5FD7492F1FB664FD007169B2 /* ed25519_sha3_512.c */,
 			);
 			path = NemApiTestiOS;
 			sourceTree = "<group>";
@@ -211,6 +224,23 @@
 				5FD7482B1FB65B57007169B2 /* sha3.h */,
 			);
 			path = librhash;
+			sourceTree = "<group>";
+		};
+		5FD749311FB681D2007169B2 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				5FD749321FB681FF007169B2 /* ConvertUtil.swift */,
+				5FD749341FB6BCBE007169B2 /* CryptoUtil.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		5FD749361FB6BDD1007169B2 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				5FD749371FB6BDE0007169B2 /* KeyPair.swift */,
+			);
+			path = entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,10 +386,14 @@
 				5FD748D11FB65B57007169B2 /* byte_order.c in Sources */,
 				5FD747E81FB6535E007169B2 /* keypair.c in Sources */,
 				5FD747E21FB6535E007169B2 /* verify.c in Sources */,
+				5FD749381FB6BDE0007169B2 /* KeyPair.swift in Sources */,
 				5FD747E51FB6535E007169B2 /* sign.c in Sources */,
+				5FD749301FB664FD007169B2 /* ed25519_sha3_512.c in Sources */,
+				5FD749331FB681FF007169B2 /* ConvertUtil.swift in Sources */,
 				5FD747E91FB6535E007169B2 /* sha512.c in Sources */,
 				5FD747401FB64A54007169B2 /* AppDelegate.swift in Sources */,
 				5FD748E81FB65B57007169B2 /* sha3.c in Sources */,
+				5FD749351FB6BCBE007169B2 /* CryptoUtil.swift in Sources */,
 				5FD747E71FB6535E007169B2 /* add_scalar.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +488,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_KECCAK,
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -468,6 +503,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "NemApiTestiOS/NemApiTestiOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -508,6 +544,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = USE_KECCAK;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -517,6 +554,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "NemApiTestiOS/NemApiTestiOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -532,7 +570,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryuta46.NemApiTestiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NemApiTestiOS/NemApiTestiOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -548,7 +585,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryuta46.NemApiTestiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NemApiTestiOS/NemApiTestiOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
