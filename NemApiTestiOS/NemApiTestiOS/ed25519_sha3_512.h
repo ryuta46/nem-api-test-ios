@@ -1,11 +1,3 @@
-//
-//  ed25519_sha3_512.h
-//  NemApiTestiOS
-//
-//  Created by Taizo Kusuda on 2017/11/11.
-//  Copyright © 2017年 ryuta46. All rights reserved.
-//
-
 #ifndef ed25519_sha3_512_h
 #define ed25519_sha3_512_h
 
