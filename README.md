@@ -2,6 +2,8 @@
 
 Nem API Test for iOS
 
+See [https://ryuta46.com/719](https://ryuta46.com/719)
+
 # How to build
 
 This project has submodules of git repository.
