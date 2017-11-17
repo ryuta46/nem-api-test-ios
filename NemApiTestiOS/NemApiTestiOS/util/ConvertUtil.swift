@@ -31,6 +31,15 @@ class ConvertUtil {
         return data
     }
 
+    static func swapByteArray(_ bytes : [UInt8]) -> [UInt8] {
+        var ret = [UInt8](repeating:0, count: bytes.count)
+
+        for i in 0..<bytes.count {
+            ret[ret.count - 1 - i] = bytes[i]
+        }
+        return ret
+    }
+
     static func toNativeArray(_ bytes: [UInt8]) -> UnsafeMutablePointer<UInt8> {
         let ret = UnsafeMutablePointer<UInt8>.allocate(capacity: bytes.count)
 

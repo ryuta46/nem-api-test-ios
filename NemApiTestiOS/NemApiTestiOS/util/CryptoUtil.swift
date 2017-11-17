@@ -41,6 +41,8 @@ class CryptoUtil {
                                     ConvertUtil.toNativeArray(privateKeySeed))
 
         let publicKeyString = ConvertUtil.toHexString(ConvertUtil.toArray(publicKey, PUBLIC_KEY_SIZE))
+
+        //print("wallet import privateKey: \(ConvertUtil.toHexString(ConvertUtil.swapByteArray(privateKeySeed)))")
         print("publicKey: \(publicKeyString)")
 
         let kv = KeyPair(
