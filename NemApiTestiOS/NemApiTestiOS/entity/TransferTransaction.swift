@@ -65,9 +65,9 @@ class TransferTransaction: SignedTransaction {
         // 最低手数料は 50_000
         // 上限は 1_250_000
         // メッセージがある場合、50_000 開始で メッセージ長 32バイト毎に 50_000
-        let xemTransferFee = (amount / 10_000_000_000) * 50_000
+        let xemTransferFee = max(50_000, min(((amount / 10_000_000_000) * 50_000) , 1_250_000))
         let messageTransferFee = messagePayload.count > 0 ? 50_000 * UInt64(1 + messagePayload.lengthOfBytes(using: .utf8) / 32) : 0
-        return max(50_000, min(xemTransferFee + messageTransferFee, 1_250_000))
+        return xemTransferFee + messageTransferFee
     }
 }
 
